@@ -12,6 +12,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
 
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() , TextWatcher, TextToSpeech.OnInitListe
             }
         }
 
-        val btnCompartilhar = findViewById<MaterialButton>(R.id.button4)
+        val btnCompartilhar = findViewById<FloatingActionButton>(R.id.button4)
 
         btnCompartilhar.setOnClickListener {
             val valor = valorConta.text.toString()

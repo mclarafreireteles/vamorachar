@@ -18,21 +18,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btFalar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:onClick="clickFalar"
-        android:text="Falar"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
 
-
-
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
 <!--        android:id="@+id/floatingActionButton"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -60,21 +47,36 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/btFalar"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/edtConta" />-->
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button4"
+    <Button
+        android:id="@+id/btFalar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="clickFalar"
+        android:text="Falar"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/purple_200"
         android:contentDescription="Compartilhar"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:iconTint="@color/black"
         android:onClick="clickFalar"
         android:text="Compartilhar"
-        android:icon="@drawable/ic_share"
-        android:iconTint="@color/black"
-        android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btFalar"
-        app:layout_constraintTop_toBottomOf="@+id/edtConta" />
+        app:layout_constraintTop_toBottomOf="@+id/edtConta"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        />
 
     <EditText
         android:id="@+id/edtConta"
