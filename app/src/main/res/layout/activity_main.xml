@@ -47,7 +47,7 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/btFalar"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/edtConta" />-->
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btFalar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,13 +58,14 @@
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
+        app:layout_constraintTop_toTopOf="@+id/button4"
+        app:srcCompat="@drawable/ic_mic" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button4"
         android:layout_width="130dp"
         android:layout_height="54dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="228dp"
         android:backgroundTint="@color/purple_200"
         android:contentDescription="Compartilhar"
         android:icon="@drawable/ic_launcher_foreground"
@@ -75,8 +76,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btFalar"
         app:layout_constraintTop_toBottomOf="@+id/edtConta"
-        app:srcCompat="?attr/actionModeShareDrawable"
-        />
+        app:srcCompat="?attr/actionModeShareDrawable" />
 
     <EditText
         android:id="@+id/edtConta"
