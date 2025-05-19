@@ -30,29 +30,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button4" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="83dp"
-        android:clickable="true"
-        android:importantForAccessibility="no"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/actionModeShareDrawable" />
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingActionButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="84dp"-->
+<!--        android:layout_marginEnd="52dp"-->
+<!--        android:layout_marginBottom="83dp"-->
+<!--        android:clickable="true"-->
+<!--        android:importantForAccessibility="no"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button4"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="?attr/actionModeShareDrawable" />-->
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="184dp"-->
+<!--        android:contentDescription="Compre suas cartas Pokemon"-->
+<!--        android:onClick="clickFalar"-->
+<!--        android:text="Compartilhar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btFalar"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edtConta" />-->
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="184dp"
-        android:contentDescription="Compre suas cartas Pokemon"
+        android:contentDescription="Compartilhar"
         android:onClick="clickFalar"
         android:text="Compartilhar"
+        android:icon="@drawable/ic_share"
+        android:iconTint="@color/black"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btFalar"
